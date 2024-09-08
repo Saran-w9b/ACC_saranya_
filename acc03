@@ -3,6 +3,8 @@ m = int(input('End of range : '))
 for o in range(n,m):
   num=o
   while num!=0 :
+    if num<10:
+      break
     p=num%10
     num=num//10
     r=num%10
@@ -10,7 +12,6 @@ for o in range(n,m):
       f=1
     else:
       f=0
-    if num<100:
       break
   if f==1:
     print(o)
