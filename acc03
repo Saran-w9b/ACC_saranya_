@@ -1,0 +1,16 @@
+n=int(input('enter the start value of range : '))
+m = int(input('End of range : '))
+for o in range(n,m):
+  num=o
+  while num!=0 :
+    p=num%10
+    num=num//10
+    r=num%10
+    if abs(p-r) == 1:
+      f=1
+    else:
+      f=0
+    if num<100:
+      break
+  if f==1:
+    print(o)
